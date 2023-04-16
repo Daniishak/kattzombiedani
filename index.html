@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat and zombie</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <div class="selected-image"> <!-- Lägg till denna rad -->
+    </div>
+
+    <div class="image">
+    </div>
+    <div class="points">Katter hittade: <span id="points">0</span>/3</div>
+    <div id="message" class="message"></div>
+    <div class="buttons">
+        <div class="north-btn">
+            <input type="button" id="north" value="n">
+        </div>
+        <div class="vsbuttons">
+            <input type="button" id="west" value="v">
+            <input type="button" id="east" value="ö">
+        </div>
+        <div class="south-btn">
+            <input type="button" id="south" value="s">
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="coin-price">
+            <div class="logo"><img src="/images/Bitcoin.png"></div>
+            <div>
+                <h1>$<span id="bitcoin"></span></h1>
+                <h1>Bitcoin</h1>
+            </div>
+        </div>
+        <div class="coin-price">
+            <div class="logo"><img src="/images/litecoin.png"></div>
+            <div>
+                <h1>$<span id="litecoin"></span></h1>
+                <h1>Litecoin</h1>
+            </div>
+        </div>
+        <div class="coin-price">
+            <div class="logo"><img src="/images/Ethereum.png"></div>
+            <div>
+                <h1>$<span id="ethereum"></span></h1>
+                <h1>Ethereum</h1>
+            </div>
+        </div>
+        <div class="coin-price">
+            <div class="logo"><img src="/images/Dogecoin.png"></div>
+            <div>
+                <h1>$<span id="dogecoin"></span></h1>
+                <h1>Dogecoin</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script/script.js"></script>
+    <script src="script/api.js"></script>
+</body>
+
+</html>

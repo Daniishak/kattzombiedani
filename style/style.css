@@ -1,0 +1,120 @@
+body{
+  overflow-x: hidden; /* Förhindra horisontell rullning */
+  margin: 0; /* Ta bort eventuella standardmarginaler */
+  padding: 0;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  transform: scale(1.5);
+  margin-bottom: 2em;
+}
+
+.vsbuttons {
+  display: flex;
+  justify-content: center; /* Ändra från 'space-around' till 'center' */
+  width: 100%;
+  gap: 20px; 
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .selected-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em; /* Lägg till lite marginal under bilden */
+  }
+  
+  .selected-image img {
+    width: 700px; /* Ändra till önskad bredd */
+    height: 300px; /* Ändra till önskad höjd */
+    object-fit: contain; /* Behåll bildens proportioner */
+  }
+
+  .container{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .container .coin-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #ccc;
+    margin: 7px;
+    width: 300px; /* Lägg till en fast bredd */
+    height: 100px; /* Lägg till en fast höjd */
+  }
+
+  .container .coin-price .logo{
+    width: 70px;
+    margin-right: 10px;
+  }
+
+  .container .coin-price .logo img{
+    width: 100%;
+  }
+
+  .container .coin-price div{
+    display: block;
+  }
+
+  .container .coin-price div h1{
+    font-size: 20px;
+  }
+
+  .points{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .cat-image {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    object-fit: contain;
+    pointer-events: none; /* Lägg till detta för att förhindra att kattbilden påverkar klickbara element under den */
+  }
+
+  .zombie-image {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    object-fit: contain;
+    pointer-events: none; /* Lägg till detta för att förhindra att kattbilden påverkar klickbara element under den */
+  }
+
+  .selected-image {
+    position: relative;
+  }
+
+  .selected-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  
+  
